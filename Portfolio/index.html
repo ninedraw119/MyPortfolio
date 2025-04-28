@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Ninedraw</title>
+  <title>Ninedraw Portfolio</title>
   <style>
     * {
       margin: 0;
@@ -157,50 +157,50 @@
   <header>
     <h1>Ninedraw</h1>
     <nav>
-      <a href="#home">Início</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+      <a href="#home">Home</a>
+      <a href="#projetos">Projects</a>
+      <a href="#contato">Contact</a>
     </nav>
   </header>
 
   <section id="home">
-    <h2>Olá! Eu sou o Ninedraw</h2>
+    <h2>Hello! I am Ninedraw</h2>
     <p><span id="typewriter"></span></p>
   </section>
 
   <section id="projetos">
-    <h2>Projetos</h2>
+    <h2>Projects</h2>
     <div class="projetos" id="projetos-lista"></div>
   </section>
 
   <section id="contato">
-    <h2>Contato</h2>
-    <p>Fale comigo por e-mail: <strong>ninedrawcontato@email.com</strong></p>
-    <button onclick="copiarEmail()">Copiar Email</button>
+    <h2>Contact</h2>
+    <p>Contact me by emaill: <strong>ninedrawcontact@gmail.com</strong></p>
+    <button onclick="copiarEmail()">Copy E-mail</button>
     <div class="social-icons">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJrsYFW5oDgrQiZQa13DN--uomhf8syMEWQ&s" alt="YouTube" onclick="window.open('https://www.youtube.com/@Nine_637', '_blank')">
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Ninedraw. Todos os direitos reservados.</p>
+    <p>© 2025 Ninedraw. All rights reserved.</p>
   </footer>
 
   <script>
     const projetos = [
       {
         titulo: "An Pacific Parkour",
-        descricao: "Jogo de parkour no Roblox pacífico e inacabado por preguiça.",
+        descricao: "Peaceful and unfinished parkour game in Roblox due to laziness.",
         link: "https://www.roblox.com/pt/games/137655933508070/An-pacific-parkour"
       },
       {
-        titulo: "Case com seu personagem favorito",
-        descricao: "Um site interativo divertido onde você pode simular um casamento com seu personagem favorito (preciso adicionar mais).",
+        titulo: "Marry your favorite character",
+        descricao: "A fun interactive website where you can simulate a wedding with your favorite character (I need to add more).",
         link: "https://mwyfco.netlify.app"
       },
       {
-        titulo: "Portfólio",
-        descricao: "Este site é o site que você está vendo agora, feito com carinho por mim, usando HTML, CSS e JavaScript.",
+        titulo: "Portfolio",
+        descricao: "This website is the website you are looking at right now, lovingly made by me using HTML, CSS and JavaScript.",
         link: "#"
       }
     ];
@@ -213,17 +213,17 @@
       div.innerHTML = `
         <h3>${proj.titulo}</h3>
         <p>${proj.descricao}</p>
-        <a href="${proj.link}" target="_blank">Ver Projeto</a>
+        <a href="${proj.link}" target="_blank">See project</a>
       `;
       container.appendChild(div);
     });
 
     function copiarEmail() {
-      navigator.clipboard.writeText("ninedrawcontato@email.com");
-      alert("Email copiado para a área de transferência!");
+      navigator.clipboard.writeText("ninedrawcontact@gmail.com");
+      alert("E-mail copied to clipboard!");
     }
 
-    const textoTypewriter = "Desenvolvedor criativo apaixonado por mundos virtuais, jogos e tecnologias. Adoro criar experiências únicas, desafios e imaginação. Aqui estão alguns dos meus projetos favoritos!";
+    const textoTypewriter = "Creative developer passionate about virtual worlds, games and technologies. I love creating unique experiences, challenges and imagination. Here are some of my favorite projects!";
     let i = 0;
     function typeWriter() {
       if (i < textoTypewriter.length) {
